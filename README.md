@@ -1,2 +1,3 @@
 # chatgpt-interview
-This is my first chatgpt projecct
+
+This is my first chatgpt project
