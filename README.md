@@ -1,2 +1,2 @@
 # chatgpt-interview
-connecting chatgpt
+This is my first chatgpt projecct
