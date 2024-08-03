@@ -7,6 +7,7 @@
     <title>chat</title>
     <!-- css -->
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
 
     <!-- js -->
     <script src="./main.js" defer type="module"></script>
@@ -16,10 +17,71 @@
   </head>
   <body>
     <div>
-      <ul></ul>
-      <form action="post">
-        <input type="text" autofocus />
-        <button type="submit">전송</button>
+      <form action="post" class="questionForm">
+        <div class="form-grp">
+            <div class="info-table">
+              <div class="tb-row">
+                <div class="tb-label">             
+                  <label class="" for="workfieldInput">지원 분야
+                  </label>
+                </div>
+                <div class="tb-input">
+                  <div class="input-shape">
+                    <input type="text" id="workfieldInput" aria-required="true" name="workfield" value="" placeholder="지원 분야를 입력해 주세요" required="">
+                  </div>
+                </div>
+              </div>
+              <div class="tb-row">
+                  <div class="tb-label">
+                    <label for="interviewTypeInput">면접 종류</label>
+                  </div>
+                  <div class="tb-input">
+                      <div class="select-shape">
+                            <select id="interviewTypeInput" name="interviewType">
+                              <option value="personality">인성 면접</option>
+                              <option value="pratical">기술 면접</option>
+                            </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="tb-row">
+                <div class="tb-label" for="introInput">자기 소개</div>
+                <div class="tb-input">
+                  <div class="textarea-shape">             
+                        <textarea id="introInput" name="intro" placeholder="간단한 자기 소개를 입력해주세요" aria-required="true" required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="tb-row">
+                <div class="tb-label" for="companyInput">회사 정보</div>
+                <div class="tb-input">
+                  <div class="textarea-shape">             
+                        <textarea id="companyInput" name="company" placeholder="주력 사업이나 인재상 등 지원 회사의 정보를 입력해 주세요.(ex. 지원 회사는 은행입니다. 원하는 인재상은 혁신 인재입니다.)" aria-required="true" required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="tb-row">
+                <div class="tb-label">
+                  <label class="" for="questionNoInput">문항 개수</label>
+                </div>
+                <div class="tb-input">
+                    <div class="input-shape">
+                        <input type="number" id="questionNoInput" name="questionNo" min="1" value="1">
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="btn-grp">
+            <button class="btn" type="submit">면접 문항 생성</button>
+          </div>
+      </form>
+
+      <form action="post" class="evaluateForm">
+        <div class="response"></div>
+        <div class="btn-grp">
+            <button class="btn" type="submit">평가하기</button>
+        </div>
       </form>
     </div>
   </body>
