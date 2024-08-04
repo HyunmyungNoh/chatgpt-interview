@@ -9,58 +9,47 @@
     display: block;
 }
 
-form + form {
-    margin-top: 100px;
+.evaluateResult {
+  display: none;
 }
 
-section h2 {
-  text-align: center;
-  margin: -7px 0 27px 0;
-}
-@media (max-width: 1024px) {
-  section h2 {
-    margin: -4px 0 46px 0;
-  }
+.evaluateResult.active {
+  display: block;
 }
 
-section p {
-  text-align: center;
-}
-@media (max-width: 1024px) {
-  section p {
-    text-align: center;
-  }
+input, textarea {
+  outline: none;
 }
 
-section ::-webkit-scrollbar-thumb {
-  background: #707070;
+textarea {
+  resize: none;
 }
-section .underlinebar {
+
+* {
+  font-family: Helvetica;
+  color: #232323;
+}
+
+.section + .section {
+    margin-top: 120px;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.title h2 {
+  display: inline-block;
   box-shadow: inset 0px -15px rgba(2, 117, 245, 0.2);
 }
-@media (max-width: 1024px) {
-  section .underlinebar {
-    word-break: keep-all;
-    box-shadow: inset 0 -7px rgba(2, 117, 245, 0.2);
-  }
-} 
-section .btn {
-  display: inline-block;
-}
-section .btn-grp {
-  margin: auto;
-  text-align: center;
-  font-size: 0;
-}
 
-/********* 섹션 *********/
-.section {
-  width: 100%;
-  /* 하단 공통 배너 섹션 */
-}
-
-
-.info-table {
+.info-table, .qResponse, .eResponse  {
   border-top: 2px solid #000;
   border-bottom: 1px solid #777;
   width: 100%;
@@ -69,7 +58,7 @@ section .btn-grp {
   font-size: 20px;
 }
 @media (max-width: 1024px) {
-  .info-table {
+  .info-table, .qResponse, .eResponse {
     font-size: 14px;
   }
 }
@@ -78,9 +67,41 @@ section .btn-grp {
   border-bottom: 1px solid #C9C9C9;
   display: flex;
 }
-.info-table .tb-row span.req {
-  color: #FF6600;
+
+.question-row {
+  width: 100%;
+  border-bottom: 1px solid #C9C9C9;
+  display: flex;
+  flex-direction: column;
 }
+
+.question-row > div, .evaluate-row {
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+
+.evaluate-row {
+  background: #f8f5f6;
+  line-height: 1.6;
+}
+
+.question-row .question {
+  background-color: #F5F5F8;
+}
+
+.question-row .answer {
+  min-height: 50px;
+}
+
+.question-row .answer textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0;
+  min-height: 50px;
+  font-size: inherit;
+}
+
 .form-grp {
   margin-top: 57px;
 }

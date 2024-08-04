@@ -16,9 +16,10 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div>
-      <form action="post" class="questionForm">
+    <div class="main">
+      <form action="post" class="questionForm section">
         <div class="form-grp">
+            <div class="title"><h2>면접자 조사지</h2></div>
             <div class="info-table">
               <div class="tb-row">
                 <div class="tb-label">             
@@ -77,12 +78,21 @@
           </div>
       </form>
 
-      <form action="post" class="evaluateForm">
-        <div class="response"></div>
+      <form action="post" class="evaluateForm section">
+        <div class="title"><h2>예상 면접 질문</h2></div>
+        <div class="qResponse"></div>
         <div class="btn-grp">
             <button class="btn" type="submit">평가하기</button>
         </div>
       </form>
+
+      <div class="evaluateResult section">
+        <div class="title"><h2>면접 평가</h2></div>
+        <div class="eResponse"></div>
+        <div class="btn-grp">
+            <button class="btn allReset" type="button">다시 하기</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
