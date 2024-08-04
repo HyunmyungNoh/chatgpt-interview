@@ -263,7 +263,7 @@ textarea {
   border: none;
   padding: 10px 0;
   resize: none;
-  height: calc(100% - 20px);
+  height: calc(100% - 21px);
   font-weight: 400;
 }
 
