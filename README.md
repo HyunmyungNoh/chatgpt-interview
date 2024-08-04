@@ -9,7 +9,7 @@
 
 
 # 와이어 프레임
-
+![storyboard](https://github.com/user-attachments/assets/51cbef75-e431-4287-aa3b-0694294f1514)
 
 
 # 시연 영상
