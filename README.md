@@ -5,7 +5,7 @@
 
 
 # WBS
-
+![wbs](https://github.com/user-attachments/assets/5f6d7ad0-0395-4145-8c41-b5ae80d90f1b)
 
 
 # 와이어 프레임
@@ -13,7 +13,7 @@
 
 
 # 시연 영상
-
+https://www.loom.com/share/08047169aece4b41a23679baea0f3fd1?sid=d2d998b9-1c07-43c4-baa2-8f0f5e88f59a
 
 
 # 느낀 점
